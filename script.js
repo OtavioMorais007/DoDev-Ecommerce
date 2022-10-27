@@ -3,7 +3,9 @@
 informações do produto correspondente;
 3. Buscar um produto pelo nome e retornar o id dele;
 E.: Entrada = Mouse Médio
-Retorno = 2*/
+Retorno = 2
+4. Exibir todos os produtos ordenados pelo id;
+5. Exibir os produtos ordenados pelo preço;2*/
 
 let ids = []
 let nomes = []
@@ -20,8 +22,8 @@ function Cadastro() {
 }
 
 function BuscaID(id) {
-    for(var i = 0;i <= ids.length; i++){
-        if(id == ids[i]){
+    for (var i = 0; i <= ids.length; i++) {
+        if (id == ids[i]) {
             console.log(ids[i])
             console.log(nomes[i])
             console.log(precos[i])
@@ -31,10 +33,22 @@ function BuscaID(id) {
 }
 
 function BuscaNome(nome) {
-    for(var i = 0; i <= ids.length; i++){
-        if(nome == nomes[i]){
+    for (var i = 0; i <= ids.length; i++) {
+        if (nome == nomes[i]) {
             console.log("ID do produto = " + ids[i])
         }
     }
 }
 
+function ExibirID() {
+    for (var i = 0; i < ids.length; i++){
+        console.log(ids[i])
+        console.log(nomes[i])
+        console.log(precos[i])
+        console.log(avaliacao[i])
+    }
+}
+
+function ExibirPreco() {
+    
+}
